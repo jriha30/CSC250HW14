@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         emptyDice = new Dice(20);
         nextDice = emptyDice;
-        numberOfDice = "";
+        numberOfDice = "0";
         this.d4_Button = this.findViewById(R.id.d4_Button);
         this.d6_Button = this.findViewById(R.id.d6_Button);
         this.d8_Button = this.findViewById(R.id.d8_Button);
@@ -196,7 +196,7 @@ public class MainActivity extends AppCompatActivity
         else if(v == this.clear_Button)
         {
             nextDice = emptyDice;
-            numberOfDice = "";
+            numberOfDice = "0";
             TextView diceAmount = this.findViewById(R.id.diceAmount_TV);
             TextView total = this.findViewById(R.id.total_TV);
             TextView separateRolls = this.findViewById(R.id.separateRolls_TV);
